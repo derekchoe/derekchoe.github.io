@@ -3286,7 +3286,7 @@ input, select, textarea {
 
 #profile-pic{
 	height: 250px;;
-	border-radius: 75%;
+	border-radius: 50%;
 }
 
 .first-pic{
