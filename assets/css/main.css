@@ -3282,5 +3282,19 @@ input, select, textarea {
 				#header br {
 					display: none;
 				}
-
 	}
+
+#profile-pic{
+	height: 250px;;
+	border-radius: 75%;
+}
+
+.first-pic{
+	height: 100%;
+	width: 100%;
+}
+
+.second-pic{
+	height: 100%;
+	width: 100%
+}
