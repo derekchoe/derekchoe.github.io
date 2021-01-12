@@ -6,10 +6,10 @@ const Nav = styled("div")`
   position: relative;
   & .nav {
     &__container {
+      height: 75px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 75px;
       max-width: ${({ theme }) => theme.maxWidth.max};
       margin: 0 auto;
       padding: ${(props) => props.theme.spacing.medium} 0;

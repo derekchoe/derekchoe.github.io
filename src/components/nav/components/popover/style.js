@@ -16,7 +16,6 @@ const Popover = styled("div")`
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      animation: 1s fade;
       padding-top: ${({ theme }) => theme.spacing.huge};
     }
 
@@ -24,9 +23,11 @@ const Popover = styled("div")`
       display: inherit;
       cursor: pointer;
       padding: ${({ theme }) => theme.spacing.small} 0;
-      transition: opacity 0.2s ease-in-out;
+      /* transition: opacity 0.2s ease-in-out; */
       font-family: ${(props) => props.theme.font.header};
       font-size: ${({ theme }) => theme.fontSize.headline};
+
+      animation: 1s fade;
     }
   }
 
@@ -53,6 +54,7 @@ export const StyledLink = styled(Link)`
     selected ? theme.color.highlightText : theme.color.primaryText};
   text-decoration: none;
   text-transform: uppercase;
+
   &:hover {
     color: ${({ theme }) => theme.color.highlightText};
     transition: all 0.2s ease;

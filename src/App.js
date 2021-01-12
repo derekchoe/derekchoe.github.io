@@ -8,9 +8,9 @@ import theme from "./utils/theme";
 import PageLayout from "./components/page-layout";
 
 // Pages
-import About from "./containers/about";
-import Work from "./containers/work";
-import Projects from "./containers/projects";
+// import About from "./containers/about";
+// import Work from "./containers/work
+import Homepage from "./containers/homepage";
 
 // Routing
 import { BrowserRouter, Switch } from "react-router-dom";
@@ -21,19 +21,18 @@ function App() {
       <BrowserRouter>
         <PageLayout>
           <Switch>
-            <Route exact path="/">
-              Homepage
+            <Route strict exact path="/">
+              <Homepage />
             </Route>
-            <Route path="/about">
+            {/* <Route path="/about">
               <About />
             </Route>
             <Route path="/work">
               <Work />
+            </Route> */}
+            <Route>
+              <Homepage />
             </Route>
-            <Route path="/projects">
-              <Projects />
-            </Route>
-            <Route>404 Page</Route>
           </Switch>
         </PageLayout>
       </BrowserRouter>

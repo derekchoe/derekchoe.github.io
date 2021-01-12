@@ -1,5 +1,5 @@
 const maxWidth = {
-  max: "1200px",
+  max: "750px",
 };
 
 const color = {
@@ -14,7 +14,7 @@ const color = {
   info: "#0079F0",
   pro: "#00ACFB",
   foreground: "#F7F8FD",
-  background: "#EBECF5",
+  background: "rgb(25,25,25)",
   popoverBack: "#0d0d0d",
 };
 
@@ -61,6 +61,7 @@ const spacing = {
   medium: "22px",
   large: "36px",
   huge: "48px",
+  footer: "70px",
 };
 
 const zIndex = {

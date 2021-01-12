@@ -14,7 +14,6 @@ import { useLocation } from "react-router-dom";
 const Nav = ({ isOpen, handleOpen }) => {
   const location = useLocation();
   const path = location.pathname;
-  console.log(path);
   return (
     <View isOpen={isOpen}>
       <nav className="nav__container">
@@ -27,8 +26,8 @@ const Nav = ({ isOpen, handleOpen }) => {
         </Link>
         <NavLinkContainer path={path} navConfig={NAV_CONFIG} />
         <Hamburger isOpen={isOpen} handleOpen={handleOpen} />
-        {isOpen && <Popover path={path} />}
       </nav>
+      {isOpen && <Popover handleOpen={handleOpen} path={path} />}
     </View>
   );
 };
