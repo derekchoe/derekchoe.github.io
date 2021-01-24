@@ -5,9 +5,6 @@ import { Link } from "react-router-dom";
 const Popover = styled("div")`
   position: absolute;
   top: 80px;
-  height: 100vh;
-  width: 100%;
-
   & .popover {
     &__container {
       margin-block: inherit;
@@ -15,7 +12,6 @@ const Popover = styled("div")`
       padding-inline-start: inherit;
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
       padding-top: ${({ theme }) => theme.spacing.huge};
     }
 
@@ -23,10 +19,8 @@ const Popover = styled("div")`
       display: inherit;
       cursor: pointer;
       padding: ${({ theme }) => theme.spacing.small} 0;
-      /* transition: opacity 0.2s ease-in-out; */
       font-family: ${(props) => props.theme.font.header};
       font-size: ${({ theme }) => theme.fontSize.headline};
-
       animation: 1s fade;
     }
   }
@@ -36,15 +30,6 @@ const Popover = styled("div")`
       &__container {
         display: none;
       }
-    }
-  }
-
-  @keyframes fade {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
     }
   }
 `;

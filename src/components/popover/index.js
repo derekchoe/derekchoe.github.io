@@ -1,7 +1,7 @@
 import React from "react";
 import View, { StyledLink } from "./style";
 
-import { NAV_CONFIG } from "../../../../utils/nav";
+import { NAV_CONFIG } from "../../utils/nav";
 
 const Popover = ({ path, handleOpen }) => (
   <View>

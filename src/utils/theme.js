@@ -1,5 +1,5 @@
 const maxWidth = {
-  max: "750px",
+  max: "800px",
 };
 
 const color = {

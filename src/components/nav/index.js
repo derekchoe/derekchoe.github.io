@@ -3,7 +3,6 @@ import View from "./style";
 
 // Components
 import NavLinkContainer from "./components/nav-link-container";
-import Popover from "./components/popover";
 import Hamburger from "../hamburger";
 
 // Utils
@@ -27,7 +26,6 @@ const Nav = ({ isOpen, handleOpen }) => {
         <NavLinkContainer path={path} navConfig={NAV_CONFIG} />
         <Hamburger isOpen={isOpen} handleOpen={handleOpen} />
       </nav>
-      {isOpen && <Popover handleOpen={handleOpen} path={path} />}
     </View>
   );
 };
