@@ -26,8 +26,3 @@ const PageLayout = ({ children }) => {
 };
 
 export default PageLayout;
-
-{
-  /* <a href="https://ibb.co/JsQ2J9w"><img src="https://i.ibb.co/P6Q4Hdv/IMG-0197.jpg" alt="IMG-0197" border="0"></a>
-<a href="https://ibb.co/ByT9pBG"><img src="https://i.ibb.co/gStx2Jd/IMG-0215-Original.jpg" alt="IMG-0215-Original" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>pic see app</a><br /> */
-}
